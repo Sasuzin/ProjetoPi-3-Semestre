@@ -16,7 +16,7 @@
             <div class="container-size">
                 <nav class="menu">
                    <a href="index.html">
-                       <img class="logo" src="_imagens/Logo-UNIBanco.png" alt="Logo UNIBanco">
+                       <img class="logo" src="projetopi/" alt="Logo UNIBanco">
                    </a>
                    <div class="menu-toggle">
                        <div class="one"></div>
@@ -133,7 +133,7 @@
         Senac 2021 - Luis Felipe Galvão Torrado
     </footer>
 
-
+    <img class="logo"></img>
 
     <div class="menu-toggle-open">
         <div class="menu-toggle-fechar">

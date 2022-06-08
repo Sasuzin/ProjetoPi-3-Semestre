@@ -26,7 +26,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarCategoria" role="button" data-bs-toggle="dropdown">Categorias</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarCategoria">
-                                @foreach (\App\Models\Category::all() as $category)
+                                @foreach (\App\Models\Categorias::all() as $categorias)
                                     <a class="dropdown-item" href="{{ route('serach-category', $category->id) }}">{{ $category->name }}</a>
                                 @endforeach
                             </ul>

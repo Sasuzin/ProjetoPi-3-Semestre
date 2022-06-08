@@ -22,7 +22,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth', 'isAdmin'])->group(function () {
-    Route::get('/dashboard', function() {
-        return view('admin.index');
-    });
+    Route::get('dashboard', 'App\Http\Controllers\Admin\FrontendController@index');
+
+    Route::get('categorias', 'App\Http\Controllers\Admin\CategoriaController@index');
+
+    Route::get('add-categorias', 'App\Http\Controllers\Admin\CategoriaController@add');
+
+    Route::post('insert-categorias' , 'App\Http\Controllers\Admin\CategoriaController@insert');
 });
+
